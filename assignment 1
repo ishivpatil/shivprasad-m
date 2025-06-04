@@ -1,0 +1,220 @@
+public class variables {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+        int x ; // declared the variables
+        
+        x=10;
+        // x+2 = 4 
+        // x*2 = 4
+        // x/2 = 1
+        
+        System.out.println(x+10);
+        System.out.println(x*2);
+        System.out.println(x/2);
+        
+        String name ;
+        name = "jayvant";
+        
+        System.out.println(name); // variable name
+        System.out.println("name"); // string name
+        
+        double num2 = 45.96 ;
+        boolean bool = true;
+        char charecter = 'a';
+        
+        System.out.println(x+num2);
+        System.out.println(bool);
+        System.out.println(charecter);
+        
+        
+        // perform arithmetic operations
+        
+        x=31;
+        
+        int sum = x+5;
+        int product = x*10;
+        double division = x/2;
+        double add = sum +product;
+        
+        System.out.println(sum);
+        System.out.println(product);
+        System.out.println(x/2);
+        System.out.println(add);
+        
+        
+        // . Concatenate string
+        
+        String part1="hello";
+        String part2="world";
+        
+        System.out.println(part1 + part2);
+        
+        
+        
+        
+           
+	}
+
+
+}
+
+
+
+
+
+
+public class arrays {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+      
+		
+		
+		// perform arrays with direct conditions
+		
+		System.out.println("using direct conditions :");
+		
+		int arr[] = new int [5];
+		
+		arr[0]= 10;
+		arr[1] = 20;
+		arr[2] = 30;
+		arr[3] = 40;
+		arr[4] = 50;
+		 
+		System.out.println(arr[0]);
+		System.out.println(arr[1]);
+		System.out.println(arr[2]);
+		System.out.println(arr[3]);
+		System.out.println(arr[4]);
+		
+		// perform arrays with while loop
+		
+		System.out.println("using while loop :");
+		
+		int i = 10 ;
+		
+		while (i<=50) {
+			System.out.println(i);
+			i=i+10;
+			
+			
+		
+		
+			
+			
+			
+		}
+	}
+
+}
+
+
+
+
+
+
+public class Sum {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// sum and average 
+		
+		
+				System.out.println("sum of arrays :");
+				
+				int[] array = {10, 20, 30, 40, 50};
+				
+				int length = array.length;
+				int sum =0;
+				
+				for (int i = 0; i < array.length; i++) {
+					
+					sum=sum+array[i];
+				}
+				System.out.println("sum of elements array :" +sum);
+				
+				
+				// average 
+				
+				System.out.println("average of arrays :");
+				
+				float average = sum/length ;
+				System.out.println(+average);
+				
+	}
+
+}
+
+
+
+
+
+public class Small_large_num { 
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// sum and average 
+		
+		
+		int arr[] = new int [5];
+	
+	
+System.out.println("using while loop :");
+		
+		int i = 10 ;
+		
+		while (i<=50) {
+			System.out.println(i);
+			i=i+10;
+
+
+		}
+		
+   int large = 50;
+    int small =10;
+        
+        System.out.println("large number :");
+        System.out.println(large);
+        
+        
+        System.out.println("small number :");
+       System.out.println(small);
+}
+}
+
+
+
+
+
+
+import java.util.Scanner;
+
+public class Ifelse {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        // Get user's age
+        System.out.print("Enter your age: ");
+        int age = sc.nextInt();
+
+        if (age >= 18) {
+            // Eligible by age
+            System.out.print("Do you have a valid ID? (y/n): ");
+            char hasID = sc.next().charAt(0);
+
+            if (hasID == 'y' || hasID == 'Y') {
+                System.out.println("You are eligible and have valid ID.");
+            } else {
+                System.out.println("You are eligible but missing valid ID.");
+            }
+        } else {
+            // Not eligible by age
+            System.out.println("You are not eligible.");
+        }
+
+        sc.close();
+    }
+}
